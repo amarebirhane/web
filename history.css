@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+span {
+  color: rgb(224, 6, 213);
+}
+
+.pone {
+  color: black;
+  background-color: rgb(240, 227, 227);
+  max-width: 500px;
+}
+
+.hist-calculator {
+  margin: 20px auto;
+  background-color: rgb(46, 45, 44);
+  padding: 20px;
+  color: aliceblue;
+  border: 2px solid #af1212;
+  border-radius: 20px;
+}
+
+a:hover {
+  color: #af1212;
+}
+
+.development {
+  margin: 20px auto;
+  padding: 15px;
+  background-color: rgb(11, 114, 114);
+  color: rgb(209, 207, 207);
+  border: 2px solid #464242;
+  border-radius: 20px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.hist-calculator h3 {
+  color: #ee5151;
+}
+
+.development h3 {
+  color: #b17c7c;
+}
+
+.hist-calculator p,
+.development p {
+  line-height: 1.6;
+}
+
+.hist-calculator img,
+.development img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.hist-calculator p:nth-of-type(2),
+.development p:nth-of-type(2) {
+  font-style: italic;
+}
+
+.hist-calculator p:nth-of-type(3),
+.development p:nth-of-type(3) {
+  font-weight: bold;
+}
+p a img {
+  max-width: 50%;
+}
