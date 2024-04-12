@@ -3,7 +3,7 @@ body {
 }
 
 span {
-  color: rgb(224, 6, 213);
+  color: rgb(7, 6, 7);
 }
 
 .pone {
@@ -17,12 +17,12 @@ span {
   background-color: rgb(46, 45, 44);
   padding: 20px;
   color: aliceblue;
-  border: 2px solid #af1212;
+  border: 2px solid #db9fcc;
   border-radius: 20px;
 }
 
 a:hover {
-  color: #af1212;
+  color: #0c0c0c;
 }
 
 .development {
@@ -33,7 +33,9 @@ a:hover {
   border: 2px solid #464242;
   border-radius: 20px;
 }
-
+a {
+  color: #2d45ad;
+}
 h3 {
   text-align: center;
 }
