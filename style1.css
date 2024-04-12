@@ -11,12 +11,12 @@ body {
 }
 
 .container-table {
-  width: 80%;
+  width: 100%;
   background-color: #fff;
   padding: 40px;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(56, 53, 53, 0.1);
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 .fan {
