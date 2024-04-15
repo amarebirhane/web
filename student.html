@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="refresh" content="5; url=website.html" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>student information</title>
+    <link rel="icon" type="image/jpg" href="img/mekelle.jpg" />
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="container-table">
+      <ul>
+        <li>
+          <abbr title="this lead to main menu"
+            ><a href="index1.html">Home</a></abbr
+          >
+        </li>
+        <li>
+          <abbr title="this lead to the apollo"
+            ><a href="apollo.html">Apollo</a></abbr
+          >
+        </li>
+        <li><a href="history.html">History</a></li>
+        <li>
+          <abbr title=" click here to go to tsudent"
+            ><a href="calculator.html">calculator</a></abbr
+          >
+        </li>
+        <li style="float: right">
+          <abbr title="student"><a href="student.html">About</a></abbr>
+        </li>
+      </ul>
+      <img src="img/mekelle.jpg" alt="mekelle U picture" />
+      <div>
+        <h1>MEKELLE UNIVERSITY</h1>
+        <br />
+        <h2>ETHIOPIAN INSTITUTE OF TECHNOLOGY - MEKELLE</h2>
+        <br />
+        <h2>SCHOOL OF COMPUTING</h2>
+        <br />
+        <h2>DEPARTMENT OF SOFTWARE ENGINEERING</h2>
+        <br />
+        <h3>subject:Web Design and Programming</h3>
+        <br />
+        <h3>course code:SENG7131</h3>
+      </div>
+      <!-- div for the table -->
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>IDNo</th>
+        </tr>
+        <tr>
+          <td>Amare Birhane</td>
+          <td>UGR/171995/12</td>
+        </tr>
+      </table>
+      <h4>Submitted to:instructor <span class="fan">Fanial</span></h4>
+      <h4 id="submission-date">Submission Date:</h4>
+      <script>
+        const submissionDateElement =
+          document.getElementById("submission-date");
+
+        // Function to update the clock
+        function updateClock() {
+          const now = new Date();
+          const month = String(now.getMonth() + 1).padStart(2, "0");
+          const day = String(now.getDate()).padStart(2, "0");
+          const year = now.getFullYear();
+          submissionDateElement.textContent = `Submission Date: ${day}/${month}/${year}`;
+        }
+
+        // Update the clock initially
+        updateClock();
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+      </script>
+
+      <button type="submit">
+        <a href="calculator.html"
+          ><abbr title=" Click here to go to calculator">calculator</abbr></a
+        >
+      </button>
+      <!-- the section part -->
+      <section class="footer">
+        <div class="box-container">
+          <div class="box">
+            <h3>quick links</h3>
+            <a href="index1.html"><i></i> home</a>
+            <a href="student.html"><i></i> about</a>
+            <a href="apollo.html"><i></i> apollo</a>
+            <a href="calculator.html"><i></i> calculator</a>
+            <a href="history.html"><i></i>history</a>
+          </div>
+
+          <div class="box">
+            <h3>contact info</h3>
+            <a href="#"><i></i> +2519----12</a>
+            <a href="#"><i></i> +2519----13</a>
+            <a href="#"><i></i> amare@gmail.com</a>
+          </div>
+
+          <div class="box">
+            <h3>contact info</h3>
+            <a href="www.facebook.com"><i></i> facebook</a>
+            <a href="https://twitter.com/"><i></i> twitter</a>
+            <a href="https://www.instagram.com/"><i></i> instagram</a>
+            <a href="https://www.linkedin.com/"><i></i> linkedin</a>
+          </div>
+        </div>
+        <p>
+          <abbr title=" click here to go to Main  menu"
+            ><a href="index1.html">MAIN MENU</a></abbr
+          >
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

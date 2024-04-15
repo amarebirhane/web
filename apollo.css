@@ -1,0 +1,53 @@
+.apollo {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: aliceblue;
+  background-color: #282829;
+  border-radius: 5px;
+}
+
+.apollo-one {
+  text-align: center;
+}
+
+.apollo-one h2 {
+  font-size: 24px;
+  color: #c76060;
+  margin-bottom: 15px;
+}
+
+.apollo-one p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+.apollo-one img:hover,
+.apollo-one img:active {
+  transform: scale(1.1) rotate(5deg);
+}
+.apollo-one img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+/*  nested  */
+@media screen and (max-width: 600px) {
+  .apollo {
+    padding: 10px;
+  }
+
+  .apollo-one h2 {
+    font-size: 20px;
+  }
+
+  .apollo-one p {
+    font-size: 14px;
+    color: aliceblue;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+}

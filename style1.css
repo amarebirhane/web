@@ -9,7 +9,39 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(89, 182, 182);
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+  color: whitesmoke;
+}
+
+.active {
+  background-color: #04aa6d;
+}
 .container-table {
   width: 100%;
   background-color: #fff;
@@ -122,8 +154,8 @@ button[type="submit"] a {
 }
 
 .footer {
-  border: 2px solid black;
-  border-radius: 10px;
+  border: 2px none;
+  border-radius: 20px;
   background-color: hsl(219, 64%, 65%);
   padding: 50px 0;
 }
@@ -131,7 +163,7 @@ button[type="submit"] a {
 .box-container {
   display: flex;
   justify-content: space-around;
-  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -165,8 +197,37 @@ button[type="submit"] a {
   margin-bottom: 10px;
   transition: color 0.3s ease;
 }
-
+.box a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
 .box a:hover {
   color: #0212ec;
   font-weight: bold;
+}
+p {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+abbr a {
+  color: #080808;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px dotted #fff;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+abbr a:hover {
+  color: #f3f2f2;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px dotted #fff;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+abbr[title] {
+  cursor: help;
 }
