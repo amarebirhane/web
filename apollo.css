@@ -1,30 +1,54 @@
-.apollo {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  color: aliceblue;
-  background-color: #282829;
-  border-radius: 5px;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
-
 .apollo-one {
   text-align: center;
 }
 
 .apollo-one h2 {
   font-size: 24px;
-  color: #c76060;
+  color: #e40a0a;
   margin-bottom: 15px;
+}
+.apollo-one h2:hover {
+  font-size: 24px;
+  color: #31db06;
+  margin-bottom: 15px;
+}
+.apollo-one h2 {
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .apollo-one p {
   font-size: 16px;
-  color: #666;
+  color: #0a0a0a;
   line-height: 1.6;
 }
 .apollo-one img:hover,
 .apollo-one img:active {
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.1) rotate(0.5deg);
+}
+span {
+  color: blue;
+  background-color: green;
+  border-radius: 10px;
+}
+span:hover {
+  color: #0a0a0a;
+  background-color: antiquewhite;
 }
 .apollo-one img {
   display: block;
@@ -37,17 +61,14 @@
 }
 /*  nested  */
 @media screen and (max-width: 600px) {
-  .apollo {
-    padding: 10px;
-  }
-
   .apollo-one h2 {
     font-size: 20px;
   }
 
   .apollo-one p {
+    margin: 10px;
     font-size: 14px;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 }
