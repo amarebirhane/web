@@ -2,129 +2,198 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta http-equiv="refresh" content="5; url=website.html" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>student information</title>
+    <title>Student Information</title>
     <link rel="icon" type="image/jpg" href="img/mekelle.jpg" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="style1.css" />
+    <style>
+      .img-border {
+        border: 2px solid #ccc; /* Adjust border color and width as needed */
+        border-radius: 10px; /* Add border radius for rounded corners */
+        padding: 5px; /* Add padding to give space around the image */
+        margin-bottom: 20px; /* Add margin to separate the image from other elements */
+        transition: border-color 0.3s ease; /* Add transition for border color change */
+        animation: zoomIn 1s ease forwards; /* Add animation for image zoom */
+      }
+      .main-menu-link:hover {
+        color: #d40808; /* Change text color on hover */
+
+        text-decoration: underline; /* Add underline on hover */
+      }
+      @keyframes zoomIn {
+        0% {
+          transform: scale(0.5);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      .img-border:hover {
+        border-color: #0704db; /* Change border color on hover */
+      }
+      .animated-img {
+        animation: both;
+      }
+    </style>
   </head>
   <body>
-    <div class="container-table">
-      <ul>
-        <li>
-          <abbr title="this lead to main menu"
-            ><a href="index1.html">Home</a></abbr
-          >
-        </li>
-        <li>
-          <abbr title="this lead to the apollo"
-            ><a href="apollo.html">Apollo</a></abbr
-          >
-        </li>
-        <li><a href="history.html">History</a></li>
-        <li>
-          <abbr title=" click here to go to student"
-            ><a href="calculator.html">calculator</a></abbr
-          >
-        </li>
-        <li style="float: right">
-          <abbr title="student"><a href="student.html">About</a></abbr>
-        </li>
-      </ul>
-      <img src="img/mekelle.jpg" alt="mekelle U picture" />
-      <div>
-        <h1>MEKELLE UNIVERSITY</h1>
-        <br />
-        <h2>ETHIOPIAN INSTITUTE OF TECHNOLOGY - MEKELLE</h2>
-        <br />
-        <h2>SCHOOL OF COMPUTING</h2>
-        <br />
-        <h2>DEPARTMENT OF SOFTWARE ENGINEERING</h2>
-        <br />
-        <h3>subject:Web Design and Programming</h3>
-        <br />
-        <h3>course code:SENG7131</h3>
-      </div>
-      <!-- div for the table -->
-      <table>
-        <tr>
-          <th>Name</th>
-          <th>IDNo</th>
-        </tr>
-        <tr>
-          <td>Amare Birhane</td>
-          <td>UGR/171995/12</td>
-        </tr>
-      </table>
-      <h4>Submitted to:instructor <span class="fan">Fanial</span></h4>
-      <h4 id="submission-date">Submission Date:</h4>
-      <script>
-        const submissionDateElement =
-          document.getElementById("submission-date");
-
-        // Function to update the clock
-        function updateClock() {
-          const now = new Date();
-          const month = String(now.getMonth() + 1).padStart(2, "0");
-          const day = String(now.getDate()).padStart(2, "0");
-          const year = now.getFullYear();
-          submissionDateElement.textContent = `Submission Date: ${day}/${month}/${year}`;
-        }
-
-        // Update the clock initially
-        updateClock();
-
-        // Update the clock every second
-        setInterval(updateClock, 1000);
-      </script>
-
-      <button type="submit">
-        <a href="calculator.html"
-          ><abbr title=" Click here to go to calculator">calculator</abbr></a
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Mekelle University</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index1.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="apollo.html">Apollo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="calculator.html">Calculator</a>
+            </li>
+            <li class="nav-item float-right">
+              <a class="nav-link active" href="student.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-3">
+      <div class="container d-flex justify-content-center">
+        <img
+          src="img/mekelle.jpg"
+          class="img-fluid rounded img-border animated-img"
+          style="max-width: 200px"
+          alt="Mekelle U picture"
+        />
+      </div>
+      <h1>MEKELLE UNIVERSITY</h1>
+      <h2>ETHIOPIAN INSTITUTE OF TECHNOLOGY - MEKELLE</h2>
+      <h2>SCHOOL OF COMPUTING</h2>
+      <h2>DEPARTMENT OF SOFTWARE ENGINEERING</h2>
+      <h3>Subject: Web Design and Programming</h3>
+      <h3>Course Code: SENG7131</h3>
+
+      <table class="table mt-4">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">IDNo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Amare Birhane</td>
+            <td>UGR/171995/12</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>Submitted to: Instructor <span class="fan">Fanial</span></h4>
+      <h4 id="submission-date">Submission Date:</h4>
+
+      <button type="button" class="btn btn-primary">
+        <a href="calculator.html" class="text-white">Calculator</a>
       </button>
-      <!-- the section part -->
-      <section class="footer">
-        <div class="box-container">
-          <div class="box">
-            <h3>quick links</h3>
-            <a href="index1.html"><i></i> home</a>
-            <a href="student.html"><i></i> about</a>
-            <a href="apollo.html"><i></i> apollo</a>
-            <a href="calculator.html"><i></i> calculator</a>
-            <a href="history.html"><i></i>history</a>
-          </div>
+    </div>
 
-          <div class="box">
-            <h3>contact info</h3>
-            <a href="#"><i></i> +2519----12</a>
-            <a href="#"><i></i> +2519----13</a>
-            <a href="#"><i></i> amare@gmail.com</a>
+    <section class="footer mt-5 bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Quick Links</h3>
+            <ul class="list-unstyled">
+              <li><a href="index1.html">Home</a></li>
+              <li><a href="student.html">About</a></li>
+              <li><a href="apollo.html">Apollo</a></li>
+              <li><a href="calculator.html">Calculator</a></li>
+              <li><a href="history.html">History</a></li>
+            </ul>
           </div>
-
-          <div class="box">
-            <h3>contact info</h3>
-            <a href="www.facebook.com"
-              ><ion-icon name="logo-facebook"></ion-icon> facebook</a
-            >
-            <a href="https://twitter.com/"
-              ><ion-icon name="logo-twitter"></ion-icon> twitter</a
-            >
-            <a href="https://www.instagram.com/"
-              ><ion-icon name="logo-instagram"></ion-icon> instagram</a
-            >
-            <a href="https://www.google.com/"
-              ><ion-icon name="logo-google"></ion-icon> google</a
-            >
+          <div class="col-md-4">
+            <h3>Contact Info</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">+2519----12</a></li>
+              <li><a href="#">+2519----13</a></li>
+              <li><a href="mailto:amare@gmail.com">amare@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>Social Media</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.facebook.com"
+                  ><ion-icon name="logo-facebook"></ion-icon> Facebook</a
+                >
+              </li>
+              <li>
+                <a href="https://twitter.com/"
+                  ><ion-icon name="logo-twitter"></ion-icon> Twitter</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/"
+                  ><ion-icon name="logo-instagram"></ion-icon> Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://www.google.com/"
+                  ><ion-icon name="logo-google"></ion-icon> Google</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-        <p>
-          <abbr title=" click here to go to Main  menu"
-            ><a href="index1.html">MAIN MENU</a></abbr
-          >
-        </p>
-      </section>
-    </div>
+        <div class="row">
+          <div class="col-md-12 text-center mt-3">
+            <p>
+              <a href="index1.html" class="text-warning main-menu-link"
+                >MAIN MENU</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+      const submissionDateElement = document.getElementById("submission-date");
+
+      // Function to update the clock
+      function updateClock() {
+        const now = new Date();
+        const month = String(now.getMonth() + 1).padStart(2, "0");
+        const day = String(now.getDate()).padStart(2, "0");
+        const year = now.getFullYear();
+        submissionDateElement.textContent = `Submission Date: ${day}/${month}/${year}`;
+      }
+
+      // Update the clock initially
+      updateClock();
+
+      // Update the clock every second
+      setInterval(updateClock, 100);
+    </script>
   </body>
 </html>

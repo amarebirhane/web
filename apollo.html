@@ -4,53 +4,146 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apollo</title>
-    <link rel="stylesheet" href="apollo.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="icon" href="img/apollo.jpeg" type="image/jpeg" />
+    <style>
+      /* Custom styles */
+      body {
+        background-color: #000; /* Change background color */
+        animation: colorChange 10s infinite alternate; /* Background color animation */
+      }
+
+      @keyframes colorChange {
+        0% {
+          background-color: #f8f9fa; /* Light gray */
+        }
+        100% {
+          background-color: #007bff; /* Blue */
+        }
+      }
+
+      .apollo-one {
+        padding: 20px;
+        background-color: rgba(
+          248,
+          249,
+          250,
+          0.8
+        ); /* Light gray background with opacity */
+        border-radius: 10px; /* Rounded corners */
+      }
+
+      .apollo-one h2 {
+        color: #dc3545; /* Red color for heading */
+        position: relative; /* Fix position */
+        right: 10px; /* Adjust position from right */
+        top: 20px; /* Adjust position from top */
+        transition: color 0.3s; /* Smooth transition for color change */
+      }
+
+      .apollo-one h2:hover {
+        color: #28a745; /* Green color on hover */
+      }
+
+      .apollo-one img {
+        border-radius: 5px; /* Rounded corners for image */
+        transition: transform 0.3s ease; /* Transition for transform property */
+        border: 2px solid #007bff; /* Border around the image */
+      }
+
+      .apollo-one img:hover {
+        transform: scale(1.1); /* Scale the image on hover */
+        border: 5px solid blue; /* Change border color on hover */
+      }
+
+      .text-right {
+        float: right; /* Align content to the right */
+        max-width: 45%; /* Limit the width of the floated content */
+      }
+
+      @media (max-width: 768px) {
+        /* Adjustments for smaller screens */
+        .text-right {
+          float: none; /* Reset float */
+          max-width: none; /* Reset max-width */
+          margin-left: auto; /* Center align text */
+          margin-right: auto; /* Center align text */
+          text-align: center; /* Center align text */
+        }
+        .apollo-one h2 {
+          position: relative; /* Reset position */
+          float: right; /* Float to right */
+          clear: both; /* Clear floating */
+          margin-top: 0; /* Reset margin */
+          right: auto; /* Reset right position */
+          top: auto; /* Reset top position */
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="apollo-one">
-      <h2>the Role Of Calculator in Apollo Mission</h2>
-      <p>
-        During the Apollo missions, an on-board computer and large computers on
-        Earth performed the critical guidance and navigation calculations
-        necessary for a successful journey. In addition, crews carried a slide
-        rule for more routine calculations. NASA chose a 5-inch, metal rule,
-        model "N600-ES," manufactured by the Pickett Company for their use. It
-        was a model that was popular among engineers, scientists and students at
-        the time. No modifications were needed for use in space.
-      </p>
-      <div>
-        <p>
-          <abbr title=" click here to link to the main menu">
-            <a href="index1.html"
-              ><img src="img/apollo.jpeg" alt="" width="350" height="350" /></a
-          ></abbr>
-        </p>
-        <p>image of apollo 11</p>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="apollo-one">
+            <div class="text-right">
+              <!-- Adjusted div for alignment -->
+              <h2 class="mb-4">The Role Of Calculator in Apollo Mission</h2>
+              <div class="text-center mb-4">
+                <abbr title="this is a link to lead to main menu">
+                  <a href="index1.html">
+                    <img
+                      src="img/apollo.jpeg"
+                      alt="image of apollo 11"
+                      class="img-fluid"
+                      width="350"
+                      height="350"
+                    /> </a
+                ></abbr>
+                <p class="mt-2">Image of Apollo 11</p>
+              </div>
+            </div>
+            <p>
+              During the Apollo missions, an on-board computer and large
+              computers on Earth performed the critical guidance and navigation
+              calculations necessary for a successful journey. In addition,
+              crews carried a slide rule for more routine calculations. NASA
+              chose a 5-inch, metal rule, model "N600-ES," manufactured by the
+              Pickett Company for their use. It was a model that was popular
+              among engineers, scientists and students at the time. No
+              modifications were needed for use in space.
+            </p>
+            <p>
+              I believe that this nation should <strong>commit</strong> itself
+              to achieving the goal, before this decade [1960s] is out, of
+              landing a man on the Moon and returning him safely to the Earth.
+              No single space project in this period will be more impressive to
+              mankind, or more important for the long-range exploration of
+              space; and none will be so difficult or
+              <a
+                href="https://www.statista.com/statistics/1028322/total-cost-apollo-missions/"
+                >expensive</a
+              >
+              to accomplish. We propose to accelerate the development of the
+              appropriate lunar space craft. We propose to develop alternate
+              <u>liquid and solid fuel boosters</u>, much larger than any now
+              being developed, until certain which is superior.
+              <span>We propose additional</span>
+              funds for other engine development and for unmanned explorations—
+              explorations which are particularly important for one purpose
+              which this nation will never overlook: the survival of the man who
+              first makes this daring flight. But in a very real sense, it will
+              not be one man going to the Moon—if we make this judgment
+              affirmatively, it will be an entire nation. For all of us must
+              work to put him there.
+            </p>
+          </div>
+        </div>
       </div>
-      <p>
-        I believe that this nation should <strong>commit</strong> itself to
-        achieving the goal, before this decade [1960s] is out, of landing a man
-        on the Moon and returning him safely to the Earth. No single space
-        project in this period will be more impressive to mankind, or more
-        important for the long-range exploration of space; and none will be so
-        difficult or
-        <a
-          href="https://www.statista.com/statistics/1028322/total-cost-apollo-missions/"
-          >expensive</a
-        >
-        to accomplish. We propose to accelerate the development of the
-        appropriate lunar space craft. We propose to develop alternate
-        <u>liquid and solid fuel boosters</u>,<br />
-        much larger than any now being developed, until certain which is
-        superior.<span> We propose additional</span> funds for other engine
-        development and for unmanned explorations—explorations which are
-        particularly important for one purpose which this nation will never
-        overlook: the survival of the man who first makes this daring flight.
-        But in a very real sense, it will not be one man going to the Moon—if we
-        make this judgment affirmatively, it will be an entire nation. For all
-        of us must work to put him there
-      </p>
     </div>
+
+    <!-- Bootstrap JS (optional, if you need JS functionality) -->
+    <script src="js/bootstrap.bundle.js"></script>
   </body>
 </html>

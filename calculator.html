@@ -2,192 +2,229 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta http-equiv="refresh" content="10"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title img>Calculator-Amare</title>
-    <!-- title image-->
+    <title>Calculator-Amare</title>
     <link rel="icon" type="image/jpeg" href="img/logo.jpeg" />
-    <!-- css style -->
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Your custom CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- header -->
-
-    <h2>
-      Simple <u>calculator</u> by
-      <i><span class="span-cal">Amare</span></i>
-    </h2>
-
-    <!-- div for container -->
     <div class="container">
       <!-- calculator div -->
       <div class="calculator">
         <!-- form -->
         <form>
           <!-- div for the display-->
-          <div class="display">
+          <div class="form-group display">
             <!-- input for the display area-->
-            <input type="text" name="display" placeholder="0" />
+            <input
+              type="text"
+              name="display"
+              class="form-control"
+              placeholder="0"
+            />
           </div>
           <!-- the 1st one div-->
-          <div>
+          <div class="row">
             <!-- input for all clear-->
-            <h4>
-              simple calculator by <i><span class="amare">Amare </span></i>
-            </h4>
-            <input
-              type="button"
-              value="AC"
-              onclick="display.value =''"
-              class="operatora"
-            />
-            <!-- input for deleting character-->
-            <input
-              type="button"
-              value="DC"
-              onclick="display.value =display.value.toString().slice(0,-1)"
-              class="operatora"
-            />
-            <!-- input for the dot sign -->
-            <input
-              type="button"
-              value="."
-              onclick="display.value +='.'"
-              class="operatoring"
-            />
-            <!-- input for division sign -->
-            <input
-              type="button"
-              value="/"
-              onclick="display.value +='/'"
-              class="operator"
-            />
+            <div class="col">
+              <h4 class="text-center">
+                Simple calculator by <i><span class="amare">Amare</span></i>
+              </h4>
+              <input
+                type="button"
+                value="AC"
+                onclick="display.value =''"
+                class="btn btn-outline-danger operatora"
+              />
+              <!-- input for deleting character-->
+              <input
+                type="button"
+                value="DC"
+                onclick="display.value =display.value.toString().slice(0,-1)"
+                class="btn btn-outline-danger operatora"
+              />
+              <!-- input for the dot sign -->
+              <input
+                type="button"
+                value="."
+                onclick="display.value +='.'"
+                class="btn btn-outline-dark operatoring"
+              />
+              <!-- input for division sign -->
+              <input
+                type="button"
+                value="/"
+                onclick="display.value +='/'"
+                class="btn btn-outline-primary operator"
+              />
+            </div>
           </div>
           <!-- the 2nd div -->
-          <div>
+          <div class="row mt-3">
             <!-- input for 7 -->
-            <input
-              type="button"
-              value="7"
-              onclick="display.value +='7'"
-              class="operat"
-            />
+            <div class="col">
+              <input
+                type="button"
+                value="7"
+                onclick="display.value +='7'"
+                class="btn btn-outline-dark operat"
+              />
+            </div>
             <!-- input for 8 -->
-            <input
-              type="button"
-              value="8"
-              onclick="display.value +='8'"
-              class="operat"
-            />
+            <div class="col">
+              <input
+                type="button"
+                value="8"
+                onclick="display.value +='8'"
+                class="btn btn-outline-dark operat"
+              />
+            </div>
             <!-- input for 9 -->
-            <input
-              type="button"
-              value="9"
-              onclick="display.value +='9'"
-              class="operat"
-            />
+            <div class="col">
+              <input
+                type="button"
+                value="9"
+                onclick="display.value +='9'"
+                class="btn btn-outline-dark operat"
+              />
+            </div>
             <!-- input for *(used for multiple sign) -->
-            <input
-              type="button"
-              value="*"
-              onclick="display.value +='*'"
-              class="operator"
-            />
+            <div class="col">
+              <input
+                type="button"
+                value="*"
+                onclick="display.value +='*'"
+                class="btn btn-outline-primary operator"
+              />
+            </div>
           </div>
           <!-- the 3rd div -->
-          <div>
+          <div class="row mt-3">
             <!-- input for 4 -->
-            <input
-              type="button"
-              value="4"
-              onclick="display.value +='4'"
-              class="operat"
-            />
+            <div class="col">
+              <input
+                type="button"
+                value="4"
+                onclick="display.value +='4'"
+                class="btn btn-outline-dark operat"
+              />
+            </div>
             <!-- input for 5 -->
-            <input
-              type="button"
-              value="5"
-              onclick="display.value +='5'"
-              class="operat"
-            />
+            <div class="col">
+              <input
+                type="button"
+                value="5"
+                onclick="display.value +='5'"
+                class="btn btn-outline-dark operat"
+              />
+            </div>
             <!-- input for 6 -->
-            <input
-              type="button"
-              value="6"
-              onclick="display.value +='6'"
-              class="operat"
-            />
+            <div class="col">
+              <input
+                type="button"
+                value="6"
+                onclick="display.value +='6'"
+                class="btn btn-outline-dark operat"
+              />
+            </div>
             <!-- input for minus sign -->
-            <input
-              type="button"
-              value="-"
-              onclick="display.value +='-'"
-              class="operator"
-            />
+            <div class="col">
+              <input type="button" value="-" onclick="display.value +='-'""
+              class="btn btn-outline-primary operator">
+            </div>
           </div>
           <!-- the 4th div -->
-          <div>
+          <div class="row mt-3">
             <!-- input for one -->
-            <input
-              type="button"
-              value="1"
-              onclick="display.value +='1'"
-              class="operat"
-            />
+            <div class="col">
+              <input
+                type="button"
+                value="1"
+                onclick="display.value +='1'"
+                class="btn btn-outline-dark operat"
+              />
+            </div>
             <!-- input for 2 -->
-            <input
-              type="button"
-              value="2"
-              onclick="display.value +='2'"
-              class="operat"
-            />
+            <div class="col">
+              <input
+                type="button"
+                value="2"
+                onclick="display.value +='2'"
+                class="btn btn-outline-dark operat"
+              />
+            </div>
             <!-- input for 3 -->
-            <input
-              type="button"
-              value="3"
-              onclick="display.value +='3'"
-              class="operat"
-            />
+            <div class="col">
+              <input
+                type="button"
+                value="3"
+                onclick="display.value +='3'"
+                class="btn btn-outline-dark operat"
+              />
+            </div>
             <!-- input for plus sign -->
-            <input
-              type="button"
-              value="+"
-              onclick="display.value +='+'"
-              class="operator"
-            />
+            <div class="col">
+              <input
+                type="button"
+                value="+"
+                onclick="display.value +='+'"
+                class="btn btn-outline-primary operator"
+              />
+            </div>
           </div>
           <!-- the 5th div -->
-          <div>
+          <div class="row mt-3">
             <!-- input for 00 -->
-            <input
-              type="button"
-              value="00"
-              onclick="display.value +='00'"
-              class="operat"
-            />
+            <div class="col">
+              <input
+                type="button"
+                value="00"
+                onclick="display.value +='00'"
+                class="btn btn-outline-dark operat"
+              />
+            </div>
             <!-- input for 0 -->
-            <input
-              type="button"
-              value="0"
-              onclick="display.value +='0'"
-              class="operat"
-            />
+            <div class="col">
+              <input
+                type="button"
+                value="0"
+                onclick="display.value +='0'"
+                class="btn btn-outline-dark operat"
+              />
+            </div>
             <!-- input for equal sign -->
-            <input
-              type="button"
-              value="="
-              onclick="display.value =eval(display.value)"
-              class="equal operator"
-            />
+            <div class="col">
+              <input
+                type="button"
+                value="="
+                onclick="display.value =eval(display.value)"
+                class="btn btn-outline-primary equal operator"
+              />
+            </div>
           </div>
         </form>
       </div>
     </div>
     <!-- footer -->
-    <footer>
+    <footer class="mt-5 text-center text-white bg-dark py-4">
       &copy; <span class="span-cal">2024</span>
-
-      <abbr title="to go to home"> <a href="index1.html">click here</a></abbr>
+      <abbr title="to go to home"
+        ><a href="index1.html" class="text-white">click here</a></abbr
+      >
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
