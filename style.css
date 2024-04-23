@@ -10,7 +10,7 @@
   height: 90vh;
   background: #464747;
   display: flex;
-  background-image: url("img/maths.png");
+  background-image: url(maths.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
