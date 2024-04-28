@@ -19,17 +19,11 @@
   justify-content: center;
 }
 
-h2 {
-  text-align: center;
-  background-color: rgb(123, 129, 123);
-  cursor: pointer;
-  color: antiquewhite;
-}
-
 .calculator {
   background-color: rgb(25, 26, 25);
   padding: 20px;
   border-radius: 10px;
+  /* position: fixed; */
 }
 
 .calculator form input {
@@ -64,19 +58,29 @@ form input.equal {
   width: 145px;
 }
 
-h4 {
+form h4 {
   text-align: center;
   font-weight: bold;
-  color: #999ca3fa;
+  color: whitesmoke;
+}
+
+form h4:hover {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(8, 212, 42);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 form h4 .amare {
   color: whitesmoke;
   cursor: pointer;
+  text-decoration: none;
 }
 
 form h4 .amare:hover {
-  color: hsl(236, 95%, 46%);
+  color: hsl(240, 82%, 48%);
+  text-decoration: none;
 }
 
 form input.operator {
@@ -121,6 +125,7 @@ form input.operat:hover {
 footer {
   background-color: #333;
   color: #fff;
+  /* position: fixed; */
   padding: 20px;
   text-align: center;
   font-size: 1.2em;
@@ -129,14 +134,17 @@ footer {
 
 footer a:hover {
   color: #0a0c0a;
-  background-color: #3f8ffd;
+  background-color: #910bc5;
+  font-size: 1.1em;
+  border-radius: 5px;
+  border: 2px solid red;
 }
 
 footer a {
   color: #07549c;
   text-decoration: none;
   cursor: pointer;
-  text-align: 2.5em;
+  text-align: 2.1em;
   font-weight: bold;
   font-size: 1.5em;
   margin: 2px;
